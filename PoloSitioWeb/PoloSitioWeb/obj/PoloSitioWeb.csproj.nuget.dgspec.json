@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj": {}
+    "C:\\GitHubRepos\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj": {
+    "C:\\GitHubRepos\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj",
+        "projectUniqueName": "C:\\GitHubRepos\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj",
         "projectName": "PoloSitioWeb",
-        "projectPath": "C:\\GitHub\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj",
-        "packagesPath": "C:\\Users\\Juacax\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\obj\\",
+        "projectPath": "C:\\GitHubRepos\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\PoloSitioWeb.csproj",
+        "packagesPath": "C:\\Users\\efdeil\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHubRepos\\SitioWebPolo\\PoloSitioWeb\\PoloSitioWeb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Juacax\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\efdeil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -57,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
