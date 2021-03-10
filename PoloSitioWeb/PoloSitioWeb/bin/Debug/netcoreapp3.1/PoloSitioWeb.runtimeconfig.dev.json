@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Juacax\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Juacax\\.nuget\\packages"
+    ]
+  }
+}
