@@ -3,7 +3,7 @@
 }
 
 <!-- ======= Testimonials Section ======= -->
-<section id="testimonials" class="testimonials section-bg">
+<section id="enterprises" class="testimonials section-bg">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -13,14 +13,13 @@
 
         <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
-//
                 @foreach (var enterprise in enterprises)
                 {
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <p class="text-center" style="min-height:200px;">
+                            <p class="text-center" style="min-height:200px; padding:20px">
                                 <a href="@enterprise.SiteUrl" target="_blank">
-                                    <img src="@enterprise.ImageUrl" width="180" class="d-inline-block" alt="@enterprise.ImageDescription">
+                                    <img src="@enterprise.ImageUrl" height="50" class="mt-5" alt="@enterprise.ImageDescription">
                                 </a>
                             </p>
                             @*<p>
