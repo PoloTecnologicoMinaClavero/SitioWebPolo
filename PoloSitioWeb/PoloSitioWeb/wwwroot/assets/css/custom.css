@@ -1,0 +1,169 @@
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+    /*-- AGREGADO -- ESTO HACE QUE EL HEADER SIEMPRE TENGA EL COLOR AZUL,
+    EN VEZ DE QUE APAREZCA SOLO CUANDO SE HACE SCROLL */
+    background: rgba(49, 122, 191, 0.85);
+}
+
+    #header.header-scrolled, #header.header-inner-pages {
+        background: rgba(49, 122, 191, 0.85);
+    }
+
+#hero {
+    background: linear-gradient(180deg, rgba(49, 122, 191, 0.8) 0%, rgba(1, 39, 74, 0.2) 100%), url("../img/hero-bg.webp") center center no-repeat;
+}
+
+.counts {
+    background: linear-gradient(90deg, rgba(49, 122, 191, 0.5) 0%, rgba(1, 39, 74, 0.5) 100%), url("../img/counts-bg-blue-2.png") center center no-repeat;
+}
+
+.portfolio .portfolio-wrap::before {
+    background: rgba(49, 122, 191, 0.8);
+}
+
+#footer {
+    background: linear-gradient(45deg, rgba(49, 122, 191, 0.9) 0%, rgba(1, 39, 74, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+}
+
+    #footer .footer-newsletter form input[type="submit"] {
+        background: rgba(49, 122, 191, 0.8);
+    }
+
+
+a {
+    color: #317bbd;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #3dc5e4;
+    }
+
+.back-to-top {
+    background: #317bbd;
+}
+
+    .back-to-top:hover {
+        background: #3dc5e4;
+    }
+
+#preloader:before {
+    border: 6px solid #317bbd;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #3dc5e4;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #3dc5e4;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: #3dc5e4;
+}
+
+#hero .btn-get-started:hover {
+    color: #3dc5e4;
+}
+
+.section-title h2::after {
+    background: #317bbd;
+}
+
+.about .content ul i {
+    color: #317bbd;
+}
+
+.about .content .read-more {
+    background: linear-gradient(45deg, #317bbd 0%, #3dc5e4 100%);
+}
+
+    .about .content .read-more:hover {
+        background: linear-gradient(180deg, #317bbd 0%, #3dc5e4 100%);
+    }
+
+.features .icon-box i {
+    color: #3dc5e4;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid #3dc5e4;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #317bbd;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    background: #317bbd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid #317bbd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #317bbd;
+}
+
+.pricing h4 {
+    color: #317bbd;
+}
+
+.pricing ul i {
+    color: #317bbd;
+}
+
+.pricing .btn-buy {
+    background: linear-gradient(42deg, #317bbd 0%, #3dc5e4 100%);
+}
+
+    .pricing .btn-buy:hover {
+        background: linear-gradient(180deg, #317bbd 0%, #3dc5e4 100%);
+    }
+
+.pricing .featured h3 {
+    background: #317bbd;
+}
+
+.pricing .advanced {
+    background: #317bbd;
+}
+
+.faq {
+    background: linear-gradient(42deg, #317bbd 0%, #3dc5e4 100%);
+}
+
+    .faq .faq-list .icon-help {
+        color: #3dc5e4;
+    }
+
+    .faq .faq-list a.collapsed:hover {
+        color: #317bbd;
+    }
+
+.contact .info-box i {
+    color: #317bbd;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    border-color: #317bbd;
+}
+
+.contact .php-email-form button[type="submit"] {
+    background: #317bbd;
+}
+
+    .contact .php-email-form button[type="submit"]:hover {
+        background: #3dc5e4;
+    }
+
+#footer .copyright-wrap {
+    border-top: 1px solid #3dc5e4;
+}
+/*#317bbd*/
+/*#3dc5e4*/
