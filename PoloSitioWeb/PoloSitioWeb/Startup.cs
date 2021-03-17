@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PoloSitioWeb.Configs;
+using PoloSitioWeb.Services;
+using PoloSitioWeb.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +26,14 @@ namespace PoloSitioWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //obtenemos configuracion de appsettings
+            services.Configure<EmailConfig>(Configuration.GetSection("EmailConfig"));
+
+            //inyectamos service para utilizarlo en los controllers
+            services.AddTransient<IEmailService, EmailService>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
