@@ -33,7 +33,6 @@ namespace PoloSitioWeb
             //inyectamos service para utilizarlo en los controllers
             services.AddTransient<IEmailService, EmailService>();
 
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +49,7 @@ namespace PoloSitioWeb
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
