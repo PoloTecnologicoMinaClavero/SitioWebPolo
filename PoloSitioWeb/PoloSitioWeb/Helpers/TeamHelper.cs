@@ -1,0 +1,194 @@
+﻿using PoloSitioWeb.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace PoloSitioWeb.Helpers
+{
+    public static class TeamHelper
+    {
+        public static List<TeamMember> GetAll()
+        {
+            var teamMembers = new List<TeamMember>();
+
+            var enterprises = EnterpriseHelper.GetAll();
+
+            var incluit = enterprises.FirstOrDefault(x => x.Name == "IncluIT");
+            var mantis = enterprises.FirstOrDefault(x => x.Name == "Mantis");
+            var verne = enterprises.FirstOrDefault(x => x.Name == "Verne");
+
+            #region Incluit
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Agustin Fdeil",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/agusfdeil.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Ailen Iacoi",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/aileniacoi.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Alejo Suaya",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/alejo.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Esteban Guerra",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/estebanguerra.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Ezequiel Etchecoin",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/ezeetchecoin.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Ezequiel Fdeil",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/ezefdeil.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Federico Sosa",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/fedesosa.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Ignacio Romero",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/ignacioromero.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Joaquin Mateos",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/joaco.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Lautaro Brito",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/lauti.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Marcos Bustos",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/marcosbustos.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Matias Lujan",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/matilujan.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Pamela Ochoa",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/pameochoa.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Priscila Guzman",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/priscila.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Ruben Benegas",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/rubenbenegas.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Sofia Britos",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/sofiabritos.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Tomas Pereyra",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/tomas.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            #endregion
+
+
+            #region Mantis
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Franco Oviedo",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Mantis/francooviedo.jpeg",
+                ImageDescription = "Member",
+                Enterprise = mantis
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Luciano Valenciaga",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Mantis/lucianovalenciaga.jpeg",
+                ImageDescription = "Member",
+                Enterprise = mantis
+            });
+            #endregion
+
+            #region Verne
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Emanuel Rojas",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Verne/emanuelrojas.jpeg",
+                ImageDescription = "Member",
+                Enterprise = verne
+            });
+            #endregion
+
+            return CommonHelper.Desordenar(teamMembers).ToList();
+        }
+    }
+}

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PoloSitioWeb.Helpers
 {
-    public static class EnterprisesHelper
+    public static class EnterpriseHelper
     {
         public static List<Enterprise> GetAll()
         {
