@@ -29,10 +29,14 @@ namespace PoloSitioWeb
 
             //obtenemos configuracion de appsettings
             services.Configure<EmailConfig>(Configuration.GetSection("EmailConfig"));
+            services.Configure<ContadoresConfig>(Configuration.GetSection("ContadoresConfig"));
 
             //inyectamos service para utilizarlo en los controllers
             services.AddTransient<IEmailService, EmailService>();
 
+
+            services.AddMvc()
+            .AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 
         }
 

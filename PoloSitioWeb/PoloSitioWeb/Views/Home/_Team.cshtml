@@ -1,34 +1,33 @@
 ﻿@{
-    var enterprises = PoloSitioWeb.Helpers.EnterpriseHelper.GetAll();
+    var members = PoloSitioWeb.Helpers.TeamHelper.GetAll();
 }
 
 <!-- ======= Testimonials Section ======= -->
-<section id="enterprises" class="testimonials section-bg">
+<!-- ======= Testimonials Section ======= -->
+<section id="team" class="testimonials section-bg">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Empresas</h2>
+            <h2>Equipo</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
-                @foreach (var enterprise in enterprises)
+                @foreach (var member in members)
                 {
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <p class="text-center" style="min-height:200px; padding:20px">
-                                <a href="@enterprise.SiteUrl" target="_blank">
-                                    <img src="@enterprise.ImageUrl" height="50" class="mt-5" alt="@enterprise.ImageDescription">
+                            <div class="team-item text-center">
+                                <a>
+                                    <img src="@member.ImageUrl" class="testimonial-img" alt="@member.ImageDescription">
+                                    <h3>@member.Name</h3>
+                                    <h4>@member.Role</h4>
                                 </a>
-                            </p>
+                            </div>
                         </div>
-                    </div><!-- End testimonial item -->
+                    </div>
                 }
-
-
-
-
             </div>
             <div class="swiper-pagination"></div>
         </div>
