@@ -11,25 +11,45 @@
             <h2>Equipo</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
+        <div class="usquare_module_wrapper">
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-                @foreach (var member in members)
+            <div class="usquare_module_shade"></div>
+            @{
+                var clasesFlechas = new Dictionary<int, string>();
+                clasesFlechas.Add(0, "usquare_square_bgblue1");
+                clasesFlechas.Add(1, "usquare_square_bggreen1");
+                clasesFlechas.Add(2, "usquare_square_bgyellow1");
+                foreach (var member in members)
                 {
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="team-item text-center">
-                                <a>
-                                    <img src="@member.ImageUrl" class="testimonial-img" alt="@member.ImageDescription">
-                                    <h3>@member.Name</h3>
-                                    <h4>@member.Role</h4>
-                                </a>
-                            </div>
-                        </div>
+                    var posicion = members.IndexOf(member) + 1;
+
+                    var esImpar = posicion % 6 > 3 || posicion % 6 == 0;
+                    //var clase = posicion % 9 == 0 ? clasesFlechas[2] : posicion % 9 <= 3 ? clasesFlechas[0] : posicion % 9 <= 6 ? clasesFlechas[1] : clasesFlechas[2];
+                    var clase = esImpar ? clasesFlechas[1] : clasesFlechas[0];
+
+                    var imgArrow = esImpar ? "arrow.png" : "arrow_r.png";
+                    var classArrow = esImpar ? "usquare_arrow " : "usquare_arrow usquare_arrow_r";
+                    <div class="usquare_block">
+                        @if (esImpar)
+                        {
+                            <img src="@member.ImageUrl" class="usquare_square @clase" alt="" />
+                        }
+                        <div class="usquare_square @clase">
+                            <div class="usquare_square_text_wrapper">
+                                <img src="assets/vendor/usquare/images/@imgArrow" class="@classArrow" alt="arrow" />
+                                <div class="clear"></div>
+                                <h2>@member.Name</h2>
+                                <span>@member.Role</span>
+                                <div class="clear"></div>
+                            </div><!-- usquare_square_wrapper -->
+                        </div><!--div    usquare_square -->
+                        @if (!esImpar)
+                        {
+                            <img src="@member.ImageUrl" class="usquare_square" alt="" />
+                        }
                     </div>
                 }
-            </div>
-            <div class="swiper-pagination"></div>
+            }
         </div>
 
     </div>

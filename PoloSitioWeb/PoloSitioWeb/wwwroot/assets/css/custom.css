@@ -13,7 +13,7 @@
     }
 
 #hero {
-    background: linear-gradient(180deg, rgba(49, 122, 191, 0.8) 0%, rgba(1, 39, 74, 0.2) 100%), url("../img/hero-bg.webp") center center no-repeat;
+    background: linear-gradient(180deg, rgba(49, 122, 191, 0.8) 0%, rgba(1, 39, 74, 0.2) 100%), url("../img/POLO.png") center center no-repeat;
 }
 
 .counts {
@@ -198,3 +198,18 @@ a {
     .testimonials .testimonial-item .team-item h4 {
         margin: 0 0 0 0px;
     }
+
+.usquare_square {
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.usquare_square_bgblue1 {
+    background-color: #317bbd;
+}
+.usquare_square_bgyellow1 {
+    background-color: #ffcf29;
+}
+.usquare_square_bggreen1 {
+    background-color: #389666;
+}

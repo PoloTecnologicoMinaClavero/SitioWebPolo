@@ -93,6 +93,14 @@ namespace PoloSitioWeb.Helpers
             });
             teamMembers.Add(new TeamMember()
             {
+                Name = "Julian Gonzalez",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Incluit/juliangonzalez.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
                 Name = "Lautaro Brito",
                 Role = "Worker",
                 ImageUrl = "/assets/img/fotos/Incluit/lauti.jpeg",
@@ -183,6 +191,14 @@ namespace PoloSitioWeb.Helpers
                 Name = "Emanuel Rojas",
                 Role = "Worker",
                 ImageUrl = "/assets/img/fotos/Verne/emanuelrojas.jpeg",
+                ImageDescription = "Member",
+                Enterprise = verne
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Mariana Rodriguez",
+                Role = "Worker",
+                ImageUrl = "/assets/img/fotos/Verne/marianarodriguez.jpeg",
                 ImageDescription = "Member",
                 Enterprise = verne
             });
