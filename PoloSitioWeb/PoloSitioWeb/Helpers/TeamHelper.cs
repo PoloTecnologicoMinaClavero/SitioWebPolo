@@ -22,7 +22,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Agustin Fdeil",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/agusfdeil.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -30,7 +30,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Ailen Iacoi",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/aileniacoi.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -38,15 +38,23 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Alejo Suaya",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/alejo.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
             });
             teamMembers.Add(new TeamMember()
             {
+                Name = "Carlos Moscoso",
+                Role = "Developer",
+                ImageUrl = "/assets/img/fotos/Incluit/carlosmoscoso.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
                 Name = "Esteban Guerra",
-                Role = "Worker",
+                Role = "Scrum Master",
                 ImageUrl = "/assets/img/fotos/Incluit/estebanguerra.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -54,7 +62,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Ezequiel Etchecoin",
-                Role = "Worker",
+                Role = "Team Leader - Dev",
                 ImageUrl = "/assets/img/fotos/Incluit/ezeetchecoin.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -62,7 +70,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Ezequiel Fdeil",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/ezefdeil.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -70,7 +78,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Federico Sosa",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/fedesosa.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -78,7 +86,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Ignacio Romero",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/ignacioromero.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -86,7 +94,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Joaquin Mateos",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/joaco.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -94,7 +102,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Julian Gonzalez",
-                Role = "Worker",
+                Role = "QA",
                 ImageUrl = "/assets/img/fotos/Incluit/juliangonzalez.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -102,7 +110,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Lautaro Brito",
-                Role = "Worker",
+                Role = "QA",
                 ImageUrl = "/assets/img/fotos/Incluit/lauti.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -110,7 +118,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Marcos Bustos",
-                Role = "Worker",
+                Role = "Team Leader - Dev",
                 ImageUrl = "/assets/img/fotos/Incluit/marcosbustos.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -118,7 +126,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Matias Lujan",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/matilujan.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -126,7 +134,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Pamela Ochoa",
-                Role = "Worker",
+                Role = "Technical Leader",
                 ImageUrl = "/assets/img/fotos/Incluit/pameochoa.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -134,7 +142,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Priscila Guzman",
-                Role = "Worker",
+                Role = "QA",
                 ImageUrl = "/assets/img/fotos/Incluit/priscila.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -142,7 +150,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Ruben Benegas",
-                Role = "Worker",
+                Role = "Team Leader - Dev",
                 ImageUrl = "/assets/img/fotos/Incluit/rubenbenegas.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -150,7 +158,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Sofia Britos",
-                Role = "Worker",
+                Role = "QA",
                 ImageUrl = "/assets/img/fotos/Incluit/sofiabritos.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -158,7 +166,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Tomas Pereyra",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/tomas.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
@@ -170,7 +178,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Franco Oviedo",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Mantis/francooviedo.jpeg",
                 ImageDescription = "Member",
                 Enterprise = mantis
@@ -178,7 +186,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Luciano Valenciaga",
-                Role = "Worker",
+                Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Mantis/lucianovalenciaga.jpeg",
                 ImageDescription = "Member",
                 Enterprise = mantis
@@ -189,7 +197,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Emanuel Rojas",
-                Role = "Worker",
+                Role = "Operations",
                 ImageUrl = "/assets/img/fotos/Verne/emanuelrojas.jpeg",
                 ImageDescription = "Member",
                 Enterprise = verne
@@ -197,7 +205,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Mariana Rodriguez",
-                Role = "Worker",
+                Role = "Operations",
                 ImageUrl = "/assets/img/fotos/Verne/marianarodriguez.jpeg",
                 ImageDescription = "Member",
                 Enterprise = verne
