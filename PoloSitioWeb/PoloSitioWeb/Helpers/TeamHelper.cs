@@ -205,7 +205,7 @@ namespace PoloSitioWeb.Helpers
             teamMembers.Add(new TeamMember()
             {
                 Name = "Mariana Rodriguez",
-                Role = "Operations",
+                Role = "Business Intelligence",
                 ImageUrl = "/assets/img/fotos/Verne/marianarodriguez.jpeg",
                 ImageDescription = "Member",
                 Enterprise = verne
