@@ -11,5 +11,7 @@ namespace PoloSitioWeb.Entities
         public string SiteUrl { get; set; }
         public string ImageUrl { get; set; }
         public string ImageDescription { get; set; }
+
+        public string Description { get; set; }
     }
 }
