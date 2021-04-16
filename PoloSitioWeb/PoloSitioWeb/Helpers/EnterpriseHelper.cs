@@ -22,7 +22,7 @@ namespace PoloSitioWeb.Helpers
             });
             enterprises.Add(new Enterprise()
             {
-                Name = "Verne",
+                Name = "Verne Technology Group",
                 SiteUrl = "https://www.vernegroup.com/",
                 ImageUrl = "/assets/img/logos/Verne.png",
                 ImageDescription = "Verne Logo",
