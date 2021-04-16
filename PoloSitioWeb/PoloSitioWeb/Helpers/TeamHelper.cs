@@ -16,7 +16,7 @@ namespace PoloSitioWeb.Helpers
 
             var incluit = enterprises.FirstOrDefault(x => x.Name == "IncluIT");
             var mantis = enterprises.FirstOrDefault(x => x.Name == "Mantis");
-            var verne = enterprises.FirstOrDefault(x => x.Name == "Verne");
+            var verne = enterprises.FirstOrDefault(x => x.Name == "Verne Technology Group");
 
             #region Incluit
             teamMembers.Add(new TeamMember()
