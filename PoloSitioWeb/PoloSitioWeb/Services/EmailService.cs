@@ -45,7 +45,7 @@ namespace PoloSitioWeb.Services
             var mailMessage = _emailConfig.MailMessage;
             mailMessage.From = new MailAddress(email);
             mailMessage.Subject = "Consulta página web Polo Tecnológico";
-
+            mailMessage.ReplyToList.Add(mailMessage.From);
             mailMessage.IsBodyHtml = true;
 
             mailMessage.Body = @$"<p><strong>Nombre y Apellido</strong>: {arrParametros[0]}. </p>
