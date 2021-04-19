@@ -30,15 +30,7 @@ namespace PoloSitioWeb.Services
 
         public async Task SendMailAsync(IEnumerable<string> parametros)
         {
-            try
-            {
-                await _emailConfig.SmtpClient.SendMailAsync(GetMailMessage(parametros));
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") + " ||| " + _emailConfig.FromPassword + " ||| " + ex.Message);
-            }
-
+            await _emailConfig.SmtpClient.SendMailAsync(GetMailMessage(parametros));
         }
 
         private MailMessage GetMailMessage(IEnumerable<string> parametros)
