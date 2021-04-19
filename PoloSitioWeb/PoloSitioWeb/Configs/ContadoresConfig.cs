@@ -8,8 +8,8 @@ namespace PoloSitioWeb.Configs
     public class ContadoresConfig
     {
         public int Empresas { set; get; }
-        public int CandtidadTrabajando { set; get; }
-        public int CandtidadProyectos { set; get; }
-        public int CandtidadCursosDictados { set; get; }       
+        public int CantidadTrabajando { set; get; }
+        public int CantidadProyectos { set; get; }
+        public int CantidadCursosDictados { set; get; }       
     }
 }

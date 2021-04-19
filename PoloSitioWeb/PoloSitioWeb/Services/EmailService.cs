@@ -16,6 +16,11 @@ namespace PoloSitioWeb.Services
         public EmailService(IOptions<EmailConfig> emailConfig)
         {
             _emailConfig = emailConfig.Value;
+
+            if (string.IsNullOrWhiteSpace(_emailConfig.FromPassword))
+            {
+                _emailConfig.FromPassword = Environment.GetEnvironmentVariable("POLOMC_FROMEMAILPASSWORD");
+            }
         }
 
         public void SendMail(IEnumerable<string> parametros)
@@ -35,15 +40,18 @@ namespace PoloSitioWeb.Services
             if (arrParametros.Length < 4)
                 throw new Exception("se esperaban 4 parametros");
 
+            var email = arrParametros[1];
+
             var mailMessage = _emailConfig.MailMessage;
+            mailMessage.From = new MailAddress(email);
             mailMessage.Subject = "Consulta página web Polo Tecnológico";
 
             mailMessage.IsBodyHtml = true;
 
-            mailMessage.Body = @$"<strong>Nombre y Apellido</strong>: {arrParametros[0]}.
-                                  <strong>Email</strong>: {arrParametros[1]}.
-                                  <strong>Asunto</strong>: {arrParametros[2]}.
-                                  <strong>Mensaje</strong>: {arrParametros[3]}.";
+            mailMessage.Body = @$"<p><strong>Nombre y Apellido</strong>: {arrParametros[0]}. </p>
+                                  <p><strong>Email</strong>: {arrParametros[1]}.</p>
+                                  <p><strong>Asunto</strong>: {arrParametros[2]}.</p>
+                                  <p><strong>Mensaje</strong>: {arrParametros[3]}.</p>";
             return mailMessage;
         }
     }

@@ -14,17 +14,17 @@ namespace PoloSitioWeb.Controllers
     public class HomeApiController : ControllerBase
     {
 
-        private readonly ContadoresConfig _contadoresConfig;
+        //private readonly ContadoresConfig _contadoresConfig;
 
-        public HomeApiController(IOptions<ContadoresConfig> contadoresConfig)
-        {
-            _contadoresConfig = contadoresConfig.Value;
-        }
+        //public HomeApiController(IOptions<ContadoresConfig> contadoresConfig)
+        //{
+        //    _contadoresConfig = contadoresConfig.Value;
+        //}
 
-        [HttpGet("/api/Home/GetCounters")]
-        public IActionResult GetCounters()
-        {
-            return Ok(_contadoresConfig);
-        }
+        //[HttpGet("/api/Home/GetCounters")]
+        //public IActionResult GetCounters()
+        //{
+        //    return Ok(_contadoresConfig);
+        //}
     }
 }
