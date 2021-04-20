@@ -61,6 +61,14 @@ namespace PoloSitioWeb.Helpers
             });
             teamMembers.Add(new TeamMember()
             {
+                Name = "Eugenio Serrano",
+                Role = "Software Architect",
+                ImageUrl = "/assets/img/fotos/Incluit/eugeserrano.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
                 Name = "Ezequiel Etchecoin",
                 Role = "Team Leader - Dev",
                 ImageUrl = "/assets/img/fotos/Incluit/ezeetchecoin.jpeg",
@@ -80,6 +88,14 @@ namespace PoloSitioWeb.Helpers
                 Name = "Federico Sosa",
                 Role = "Developer",
                 ImageUrl = "/assets/img/fotos/Incluit/fedesosa.jpeg",
+                ImageDescription = "Member",
+                Enterprise = incluit
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Gabriel Funes",
+                Role = "Developer",
+                ImageUrl = "/assets/img/fotos/Incluit/gabifunes.jpeg",
                 ImageDescription = "Member",
                 Enterprise = incluit
             });
@@ -173,7 +189,6 @@ namespace PoloSitioWeb.Helpers
             });
             #endregion
 
-
             #region Mantis
             teamMembers.Add(new TeamMember()
             {
@@ -204,9 +219,25 @@ namespace PoloSitioWeb.Helpers
             });
             teamMembers.Add(new TeamMember()
             {
+                Name = "Luciano Rodriguez",
+                Role = "Operations",
+                ImageUrl = "/assets/img/fotos/Verne/lucianorodriguez.jpeg",
+                ImageDescription = "Member",
+                Enterprise = verne
+            });
+            teamMembers.Add(new TeamMember()
+            {
                 Name = "Mariana Rodriguez",
                 Role = "Business Intelligence",
                 ImageUrl = "/assets/img/fotos/Verne/marianarodriguez.jpeg",
+                ImageDescription = "Member",
+                Enterprise = verne
+            });
+            teamMembers.Add(new TeamMember()
+            {
+                Name = "Pablo Nesteruc",
+                Role = "Operations",
+                ImageUrl = "/assets/img/fotos/Verne/pablonesteruc.jpeg",
                 ImageDescription = "Member",
                 Enterprise = verne
             });
