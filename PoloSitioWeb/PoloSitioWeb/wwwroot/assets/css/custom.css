@@ -207,13 +207,19 @@ a {
 .usquare_square_bgblue1 {
     background-color: #317bbd;
 }
+
 .usquare_square_bgyellow1 {
     background-color: #ffcf29;
 }
+
 .usquare_square_bggreen1 {
     background-color: #389666;
 }
 
-.logo-mina-footer{
+.logo-mina-footer {
     max-height: 220px;
+}
+
+section {
+    padding: 30px 0
 }

@@ -1,34 +1,34 @@
 ﻿@{
-    var enterprises = PoloSitioWeb.Helpers.EnterpriseHelper.GetAll();
+    var sponsors = PoloSitioWeb.Helpers.SponsorHelper.GetAll();
 }
 
 <!-- ======= Testimonials Section ======= -->
-<section id="enterprises" class="testimonials section-bg">
+<section id="sponsors" class="testimonials section-bg">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Empresas</h2>
+            <h2>Sponsors</h2>
             <p class="text-center">
-                Te presentamos las empresas que apuestan por nuestro proyecto, brindando fuentes de trabajo y recursos.<br />
-                ¿Te interesaría participar de alguna manera? Escribinos <a href="#contact">aquí</a>
+                @*Te presentamos las empresas que apuestan por nuestro proyecto, brindando fuentes de trabajo y recursos.<br />
+                ¿Te interesaría participar de alguna manera? Escribinos <a href="#contact">aquí</a>*@
             </p>
         </div>
 
-        <div class="enterprises-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="sponsors-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
-                @foreach (var enterprise in enterprises)
+                @foreach (var sponsor in sponsors)
                 {
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <p class="text-center" style="min-height:200px; padding:20px">
-                                <a href="@enterprise.SiteUrl" target="_blank">
-                                    <img src="@enterprise.ImageUrl" height="50" class="mt-5" alt="@enterprise.ImageDescription">
+                                <a href="@sponsor.SiteUrl" target="_blank">
+                                    <img src="@sponsor.ImageUrl" height="50" class="mt-5" alt="@sponsor.ImageDescription">
 
                                 </a>
                                 <br />
                                 <br />
 
-                                @enterprise.Description
+                                @sponsor.Description
 
                             </p>
                             
